@@ -1,0 +1,471 @@
+@import "global.css";
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  background-color: var(--pr-color);
+  width: 256px;
+  height: fit-content;
+  font-size: 40px;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.logo a {
+  color: var(--sn-color);
+}
+.logo p {
+  font-size: 15px;
+}
+.menu {
+  display: flex;
+}
+.menu a {
+  font-size: 20px;
+  margin-left: 50px;
+  color: var(--sn-color);
+  position: relative;
+  font-family: arial;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+.menu a:hover::after {
+  opacity: 1;
+  bottom: -5px;
+}
+
+/* Welcome Page */
+
+.bg {
+  position: relative;
+  height: 70vh;
+}
+.overbg{
+    background-color: var(--sn-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 50%;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.bg .container {
+  height: 100%;
+  width: 100%;
+}
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-items: center;
+
+}
+.welcome-box {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.welcome-box .content {
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.welcome-box .content span {
+  font-size: 30px;
+  font-family: arial;
+  letter-spacing: 4px;
+}
+.welcome-box .content h1 {
+  font-size: 80px;
+  letter-spacing: 4px;
+}
+.welcome-box .content h3 {
+  letter-spacing: 4px;
+  font-size: 50px;
+}
+.welcome-box .content p {
+  font-size: 16px;
+  font-family: arial;
+}
+.content-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.content-center button {
+  background-color: var(--pr-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-family: arial;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+}
+.content-center button i {
+  margin-right: 10px;
+}
+.content-center a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: arial;
+}
+.content-center a i {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Sub Title */
+.sub-title {
+  padding: 55px 0;
+  text-align: center;
+}
+.sub-title span {
+  font-family: arial;
+  font-size: 28px;
+}
+
+/* Card Product */
+
+.box-card {
+  position: relative;
+}
+.box-card .card-product {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+.box-card .card-product .content {
+  position: relative;
+  padding: 0 55px;
+}
+.box-card .card-product .content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+.box-card .card-product .content h2 {
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  margin-bottom: 40px;
+}
+.box-card .card-product .content p {
+  font-size: 20px;
+  font-family: arial;
+  margin-bottom: 40px;
+}
+
+.price {
+    font-size: 14px; /* ปรับขนาดตัวอักษรลง */
+    color: #fff;
+    background-color: var(--sn-color); /* สีพื้นหลัง */
+    padding: 5px 10px; /* ปรับพื้นที่ padding */
+    border-radius: 4px;
+    display: inline-block; /* ตั้งให้แสดงเป็นบล็อกขนาดเล็ก */
+}
+
+    
+.box-card .card-product .content button {
+  font-size: 20px;
+  background-color: var(--pr-color);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: arial;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 20px;
+
+}
+.box-card .card-product .img {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+.box-card .card-product .img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* Slide */
+
+.termi {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+}
+.termi .slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+.termi .slide .items {
+  width: 600px;
+  height: fit-content;
+  text-align: center;
+  line-height: 2;
+}
+.termi .slide .items h1 {
+  font-size: 40px;
+}
+.termi .slide .items span {
+  font-size: 24px;
+  font-family: arial;
+}
+.termi .slide .items p {
+  font-size: 16pxpx;
+  font-family: arial;
+}
+.arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.arrow button {
+  background-color: var(--pr-color);
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+/* Footer */
+
+footer{
+  position: relative;
+  background-color: var(--sn-color);
+  color: #fff;
+  padding: 5% 0;
+}
+footer span{
+  font-family: arial;
+}
+footer a{
+  color:#fff;
+  font-family: arial;
+}
+footer .footer-box{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 15px;
+}
+footer .footer-box .footer-items,footer .footer-box .footer-items ul{
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-box .footer-items .footer-logo{
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer .footer-box .footer-items .footer-logo h3{
+  font-size: 25px;
+  letter-spacing: 1.2px;
+}
+footer .footer-box .footer-items:nth-child(1){
+  align-items: flex-start;
+}
+footer .footer-box .footer-items:nth-child(1) span{
+  font-size: 14px;
+}
+footer .footer-box .footer-items ul a{
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+footer .footer-box .footer-items ul a i{
+  margin-right: 30%;
+}
+footer .footer-box .footer-items{
+  align-items: center;
+}
+footer .footer-box .footer-items form{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+footer .footer-box .footer-items form input[type='email']{
+  width: 250px;
+  height: 40px;
+  border: solid 2px var(--pr-color);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: arial;
+  padding: 3px 10px;
+  outline: none;
+}
+footer .footer-box .footer-items form input[type='email']::placeholder{
+  color: #fff;
+}
+footer .footer-box .footer-items form button{
+  width: 20%;
+  background-color: var(--pr-color);
+  color: var(--sn-color);
+  border: none;
+  font-family: arial;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px; /* ปรับตำแหน่งตามต้องการ */
+    right: 20px; /* ปรับตำแหน่งตามต้องการ */
+    z-index: 9999; /* ตั้งค่า z-index เพื่อให้ไอคอนอยู่ด้านหน้า */
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #000; /* สีของไอคอน */
+}
+.cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+.cart-overlay h3{
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    padding-top: 15px;
+}
+.cart-dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+#closeCart {
+    position: absolute;
+    bottom: 10px; /* ตำแหน่งด้านล่าง */
+    left: 50%; /* ตำแหน่งกึ่งกลางแนวนอน */
+    transform: translateX(-50%); /* ย้ายปุ่มปิดไปทางซ้าย 50% ของตำแหน่งของตนเอง */
+    border: none;
+    background: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* ปรับระยะห่างของรายการสินค้า */
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* ลดระยะห่างด้านบนของรายการสินค้า */
+}
+.cart-item .title {
+    flex: 1;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-left: 30px;
+  }
+  .cart-item .price {
+    margin-right: 15px;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+
+.cart-item:last-child {
+    border-bottom: none; /* ไม่มีเส้นขอบสำหรับรายการสุดท้าย */
+}
+
+.cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-container.show {
+    display: block;
+}
+
+
+

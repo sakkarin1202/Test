@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="index.html"> luxury </a>
+          </div>
+          <ul class="menu">
+            <a href="">Home</a>
+            <a href="">Product</a>
+            <a href="">Contact-us</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Welcome Page -->
+    <div class="bg">
+      <div class="overlay"></div>
+      <img src="background.jpg" alt="" />
+      <div class="container">
+        <div class="welcome">
+          <div class="welcome-box">
+            <div class="content">
+              <span>WELCOME TO</span>
+              <h1>LUXURY</h1>
+            </div>
+            <div class="content-center">
+              <button>
+                <i class="far fa-calendar-check"></i>
+                book now
+              </button>
+            </div>
+            <div class="content-center">
+              <a href="">
+                Scroll
+                <i class="fas fa-chevron-circle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub Title -->
+    <div class="container sub-title">
+      <span>All types of products have been reduced in price.</span>
+    </div>
+    <div class="cart-icon" id="cartIcon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartItemCount">0</span>
+    </div>
+    <div class="cart-overlay" id="cartOverlay">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button id="closeCart">Close</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+      </div>
+    </div>
+
+    <!-- Card Product -->
+    <div class="container">
+      <div class="box-card">
+        <!-- Card 1 -->
+        <div class="card-product">
+          <div class="content">
+            <h2>Luxury redefined</h2>
+            <p>
+              Our rooms are designed to transport you into an environment made
+              for leisure. Take your mind off the day-to-day of home life and
+              find a private paradise for yourself.
+            </p>
+            <p class="price">$100</p>
+            <button class="add-to-cart">Add</button>
+          </div>
+          <div class="img">
+            <img src="img/card1.png" alt="" />
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-product">
+          <div class="content">
+            <h2>Leave your worries in the sand</h2>
+            <p>
+              We love life at the beach. Being close to the ocean with access to
+              endless sandy beach ensures a relaxed state of mind. It seems like
+              time stands still watching the ocean.
+            </p>
+            <p class="price">$100</p>
+            <button class="add-to-cart">Add</button>
+          </div>
+          <div class="img">
+            <img src="img/card2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide -->
+    <div class="container space-center">
+      <div class="termi">
+        <div class="slide" id="slide">
+          <div class="items">
+            <h1>Testimonials 1</h1>
+            <span>May you be happy with your product selection.</span>
+            <p>"Sakkarin"</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrow">
+        <button id="prev"><i class="fas fa-chevron-left"></i></button>
+        <button id="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-box">
+          <div class="footer-items">
+            <div class="footer-logo">
+              <h3>LUXURY</h3>
+              <p>Product</p>
+            </div>
+            <span>Se Npru</span>
+            <span>654259020</span>
+            <span>xfake12340@hotmail.com</span>
+          </div>
+          <div class="footer-items">
+            <ul>
+              <a href="">About</a>
+              <a href="">Contact</a>
+              <a href="">Terms & Conditions</a>
+            </ul>
+          </div>
+          <div class="footer-items">
+            <ul>
+              <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+              <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+            </ul>
+          </div>
+          <div class="footer-items">
+            <ul>
+              <span>Subscribe to our newsletter</span>
+              <form action="">
+                <input type="email" name="" placeholder="Email Address" id="" />
+                <button>OK</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
